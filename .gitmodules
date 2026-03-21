@@ -1,0 +1,3 @@
+[submodule "benchmarks/SERGIO"]
+	path = benchmarks/SERGIO
+	url = git@github.com:marcfranquesa/SERGIO.git

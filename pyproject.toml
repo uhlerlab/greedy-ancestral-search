@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "greedy-ancestral-search"
+dynamic = ["version"]
+dependencies = [
+    "networkx>=3.4.2",
+]
+requires-python = ">=3.10"
+authors = [
+    { name = "Marc Franquesa Monés"},
+    { name = "Jiaqi Zhang"},
+    { name = "Caroline Uhler"},
+]
+description = "Official implementation of the Greedy Ancestral Seach (GAS) algorithm from the paper 'On the Number of Conditional Independence Tests in Constraint-based Causal Discovery'."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.md"]
+keywords = ["causal discovery", "constraint-based causal discovery"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Repository = "https://github.com/uhlerlab/greedy-ancestral-search"
+Issues = "https://github.com/uhlerlab/greedy-ancestral-search/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "benchmarks",
+]
+
+[dependency-groups]
+dev = [
+    "causal-learn>=0.1.4.1",
+    "conditional-independence>=0.1a6",
+    "graphical-model-learning>=0.1a8",
+    "graphical-models>=0.1a21",
+    "ipykernel>=6.30.0",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "pytest>=8.3.5",
+    "ruff>=0.11.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[tool.ruff]
+exclude = ["benchmarks/SERGIO"]
+lint.extend-select = ["I"]
