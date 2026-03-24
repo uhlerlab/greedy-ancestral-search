@@ -1,6 +1,6 @@
 # Greedy Ancestral Search
 
-[![Paper](https://img.shields.io/badge/arXiv-XXXX.XXXXX-red.svg)]()
+[![Paper](https://img.shields.io/badge/arXiv-2603.21844-red.svg)](http://arxiv.org/abs/2603.21844)
 [![CI](https://github.com/uhlerlab/greedy-ancestral-search/actions/workflows/ci.yaml/badge.svg)](https://github.com/uhlerlab/greedy-ancestral-search/actions/workflows/ci.yaml)
 [![PyPI](https://img.shields.io/pypi/v/greedy-ancestral-search.svg?)](https://pypi.org/project/greedy-ancestral-search/)
 [![Python Version](https://img.shields.io/pypi/pyversions/greedy-ancestral-search.svg?)](https://pypi.org/project/greedy-ancestral-search/)
@@ -107,3 +107,19 @@ Available scripts include:
 - `benchmarks/sample-size.py`
 - `benchmarks/scale-free-graphs.py`
 - `benchmarks/sergio.py`
+
+## Citation
+
+If you use GAS in your work, please cite:
+
+```bibtex
+@misc{mones2026numberconditionalindependencetests,
+      title={On the Number of Conditional Independence Tests in Constraint-based Causal Discovery}, 
+      author={Franquesa Mon\'{e}s, Marc and Zhang, Jiaqi and Uhler, Caroline},
+      year={2026},
+      eprint={2603.21844},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2603.21844}, 
+}
+```
